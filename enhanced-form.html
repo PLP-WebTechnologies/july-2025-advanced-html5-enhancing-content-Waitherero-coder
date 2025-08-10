@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML5 Content & Forms</title>
+    <meta name="description" content="HTML5 practice page with lists, tables, media, and a fully-featured form.">
+</head>
+<body>
+    <header>
+        <h1>Enhanced HTML Elements</h1>
+        <p>This page demonstrates lists, tables, media, HTML form with validation.</p>
+    </header>
+
+    <!-- SECTION 1: LISTS -->
+    <section>
+        <h2>Popular Programming Languages</h2>
+
+        <h3>Ordered List (Top 3)</h3>
+        <ol>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Java</li>
+        </ol>
+
+        <h3>Unordered List (Other Languages)</h3>
+        <ul>
+            <li>C++</li>
+            <li>Go</li>
+            <li>Ruby</li>
+        </ul>
+
+        <h3>Definition List (Programming Concepts)</h3>
+        <dl>
+            <dt>Variable</dt>
+            <dd>A storage location paired with an associated symbolic name.</dd>
+            <dt>Function</dt>
+            <dd>A block of code designed to perform a particular task.</dd>
+            <dt>Loop</dt>
+            <dd>A sequence of instructions that is continually repeated until a certain condition is reached.</dd> 
+        </dl>
+    </section>
+
+    <!-- SECTION 2: TABLE -->
+    <section>
+        <h2>Web Development Languages Table</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Language</th>
+                    <th>Primary Use</th>
+                    <th>Difficulty Level</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td>Structure of web pages</td>
+                    <td>Easy</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>Styling web pages</td>
+                    <td>Medium</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Adding interactivity</td>
+                    <td>Medium</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- SECTION 3: MEDIA -->
+    <section>
+        <h2>Media Example</h2>
+        <figure>
+             <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=400" alt="HTML5 Development" width="400" height="300">
+                    <figcaption>Modern Web Development with HTML5</figcaption>
+        </figure>
+
+        <h3>Sample Audio</h3>
+        <audio controls>
+            <source src="media/audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <h3>Sample Video</h3>
+        <video width="320" height="240" controls>
+            <source src="media/video.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+    </section>
+
+    <!-- SECTION 4: FORM -->
+    <section>
+  <h2>Registration Form</h2>
+  <form action="#" method="post" autocomplete="on">
+
+    <fieldset>
+      <legend>👤 Personal Information</legend>
+
+      <label for="userID">User ID (Read-only):</label>
+      <input
+        type="text"
+        id="userID"
+        name="userID"
+        value="USR-001"
+        readonly
+        autocomplete="off"
+      ><br><br>
+
+      <label for="fullname">Full Name:</label>
+      <input
+        type="text"
+        id="fullname"
+        name="fullname"
+        placeholder="Enter your full name"
+        required
+        minlength="3"
+        autocomplete="name"
+      ><br><br>
+
+      <label for="email">Email Address:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="you@example.com"
+        required
+        autocomplete="email"
+      ><br><br>
+
+      <label for="phone">Phone Number:</label>
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        pattern="[0-9]{10}"
+        placeholder="0712345678"
+        required
+        autocomplete="tel"
+      ><br><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>📑 Account Details</legend>
+
+      <label for="username">Username:</label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        required
+        minlength="4"
+        maxlength="15"
+        placeholder="Choose a username"
+        autocomplete="username"
+      ><br><br>
+
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        required
+        minlength="8"
+        placeholder="Create a password"
+        autocomplete="new-password"
+      ><br><br>
+
+      <label for="role">Select Role:</label>
+      <select id="role" name="role" required autocomplete="none">
+        <option value="">--Please choose--</option>
+        <option value="student">Student</option>
+        <option value="developer">Developer</option>
+        <option value="designer">Designer</option>
+      </select><br><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>💬 Preferences</legend>
+
+      <label>
+        <input
+          type="checkbox"
+          name="newsletter"
+          value="yes"
+          checked
+          autocomplete="off"
+        >
+        Subscribe to newsletter
+      </label><br>
+
+      <label>
+        <input
+          type="radio"
+          name="contact"
+          value="email"
+          required
+          autocomplete="contact-preference"
+        >
+        Contact by Email
+      </label>
+      <label>
+        <input
+          type="radio"
+          name="contact"
+          value="phone"
+          required
+          autocomplete="contact-preference"
+        >
+        Contact by Phone
+      </label>
+    </fieldset>
+
+    <br>
+    <input type="submit" value="Register 🚀">
+    <input type="reset" value="Clear Form">
+  </form>
+</section>
+
+    <footer>
+        <p>&copy; 2025 Enhanced HTML Assignment</p>
+    </footer>
+
+</body>
+</html>
